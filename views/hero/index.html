@@ -1,0 +1,13 @@
+<div data-defineview="hero/index">
+  <ul>
+    <li data-foreach-hero='currentHeroes'>
+      <p data-bind="hero.name"></p>
+      <input type="text" data-bind="hero.name" data-event-change="saveHero" />
+      <span data-bind="hero.power"></span>
+    </li>
+  </ul>
+  <button data-event-click="createHero">
+    New Hero
+  </button>
+  <a data-route="'/stats'">Stats</a>
+</div>
